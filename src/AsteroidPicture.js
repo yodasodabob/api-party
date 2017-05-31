@@ -25,7 +25,7 @@ class AsteroidPicture extends Component {
         console.log(randNum, max)
         return randNum;
     }
-
+    
     fetchData(props) {
         fetch(`https://api.nasa.gov/EPIC/api/enhanced/date/${props.match.params.date}?api_key=${this.apiKey}`)
             .then(response => response.json())
